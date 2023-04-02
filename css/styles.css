@@ -1,0 +1,89 @@
+:root {
+    --primary-text-color: #DEDEDE;
+    --secondary-text-color: #959595;
+    --white-text-color: #ffffff;
+    --background-button-color: #9D9D9D;
+}
+
+/*переробити 
+шрифти боді,колір .... - це не заголовки */
+
+body {
+background-color: #292929;
+color: var(--primary-text-color);
+font-family: 'Manrope', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+letter-spacing: -0.5px;
+
+margin: 0;
+}
+
+h1,
+h2,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    list-style: none;
+    
+}
+
+.link {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+
+    
+}
+
+.header-nav {
+    display: flex;
+}
+
+.logo {
+    
+    font-size: 20px;
+        line-height: 27px;
+}
+
+.nav-item,
+.button {
+    font-weight: 600;
+    font-size: 18px;
+        line-height: 25px;
+}
+
+.main.title {
+    font-weight: 700;
+        font-size: 64px;
+        line-height: 70px;
+}
+
+.hero p {
+    color: var(--secondary-text-color);
+    font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+}
+
+.button {
+
+    cursor: pointer;
+    color: var(--white-text-color);
+    font-family: inherit;
+    background-color: var(--background-button-color);
+    text-align: center;
+
+    
+        margin-left: 96px;
+        border: none;
+        border-radius: 4px;
+}
