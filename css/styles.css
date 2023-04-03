@@ -1,6 +1,6 @@
 :root {
-    --primary-text-color: #DEDEDE;
-    --secondary-text-color: #959595;
+    --primary-text-color: #959595 ;
+    --secondary-text-color: #DEDEDE;
     --white-text-color: #ffffff;
     --background-button-color: #9D9D9D;
 }
@@ -9,16 +9,29 @@
 шрифти боді,колір .... - це не заголовки */
 
 body {
-background-color: #292929;
+background-color: #DBDBDB;
 color: var(--primary-text-color);
 font-family: 'Manrope', sans-serif;
 font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 49px;
+font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
 letter-spacing: -0.5px;
 
 margin: 0;
+
+}
+
+.container {
+    width: 1248px;
+    padding-left: 96px;
+    padding-right: 96px;
+    background-color: #292929;
+    margin-left: 0;
+    margin-right: 0;
+    
+    
 }
 
 h1,
@@ -30,28 +43,38 @@ ul {
 }
 
 .list {
-    list-style: none;
     
+    list-style: none;
+    padding: 0;
 }
 
 .link {
+    display: block;
     text-decoration: none;
 }
 
-header {
+.header-container {
     display: flex;
-
+    background-color: rgba(50, 50, 50, 0.9);
+    
     
 }
 
 .header-nav {
     display: flex;
+
+
 }
 
 .logo {
-    
+    color: var(--secondary-text-color);
+    font-weight: 700;
     font-size: 20px;
         line-height: 27px;
+}
+
+.nav-item .link {
+    color: var(--secondary-text-color);
 }
 
 .nav-item,
@@ -62,17 +85,21 @@ header {
 }
 
 .main.title {
+    
     font-weight: 700;
         font-size: 64px;
         line-height: 70px;
+        color: var(--secondary-text-color);
 }
 
+/*
 .hero p {
     color: var(--secondary-text-color);
-    font-weight: 600;
+   
         font-size: 24px;
         line-height: 36px;
 }
+*/
 
 .button {
 
@@ -82,8 +109,78 @@ header {
     background-color: var(--background-button-color);
     text-align: center;
 
+    display: flex;
+    align-items: center;
     
-        margin-left: 96px;
         border: none;
         border-radius: 4px;
+        padding: 19px 101px;
+}
+.featured-work-title {
+    font-size: 16px;
+    font-style: normal;
+        line-height: 16px;
+        
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        opacity: 0,7;
+}
+
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    
+    border-radius: 4px;
+    background-color: #292929;
+}
+
+
+.featured-work-item {
+   display: block;
+   max-width: 612px;
+   
+}
+
+
+
+
+.featured-work-item:nth-child(-n+2) {
+    margin-bottom: 24px;
+}
+
+.featured-work-item:nth-child(2n+1) {
+margin-right: 24px;
+}
+
+.title {
+    
+    color: var(--secondary-text-color);
+    font-style: normal;
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+        letter-spacing: -0.5px;
+}
+
+.contacting p {
+    text-align: center;
+}
+
+.contacting .button {
+   display: flex;
+justify-content: center;
+    align-items: center;
+    margin: auto
+}
+
+.underline-copyright span {
+    color: var(--white-text-color);
+}
+
+.underline-copyright {
+    font-size: 16px;
 }
