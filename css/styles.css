@@ -25,12 +25,15 @@ margin: 0;
 
 .container {
     width: 1248px;
+    
     padding-left: 96px;
     padding-right: 96px;
     background-color: #292929;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
     
+  
     
 }
 
@@ -43,7 +46,7 @@ ul {
 }
 
 .list {
-    
+    display: flex;
     list-style: none;
     padding: 0;
 }
@@ -90,6 +93,7 @@ ul {
         font-size: 64px;
         line-height: 70px;
         color: var(--secondary-text-color);
+        padding-top: 129px;
 }
 
 /*
@@ -138,6 +142,7 @@ ul {
 }
 
 
+
 .featured-work-item {
    display: block;
    max-width: 612px;
@@ -155,6 +160,34 @@ ul {
 margin-right: 24px;
 }
 
+.featured-work-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+
+/*
+.featured-work-item.fist {
+    position: absolute;
+}
+*/
+
+
+.featured-work-item.second,
+.featured-work-item.fourd
+{
+    position: relative;
+    top: 138px;
+    
+}
+
+.featured-work-item.fourd {
+    margin-bottom: 138px;
+}
+
+
+
 .title {
     
     color: var(--secondary-text-color);
@@ -164,17 +197,63 @@ margin-right: 24px;
         line-height: 49px;
         text-align: center;
         letter-spacing: -0.5px;
+        padding-top: 240px;
+}
+
+.visual-explorations-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+    
+}
+
+.visual-explorations-item {
+    display: flex;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    flex-basis: calc((100% - 72px) / 3);
+}
+
+/*.visual-explorations-item:nth-child(3n+1) {
+    margin-bottom: 24px;
+}
+*/
+
+.personal-projects-list {
+    display: flex;
+    margin-right: -24px;
+}
+
+.personal-projects-item {
+    display: flex;
+    margin-right: 24px;
+    flex-basis: calc((100% - 72px) / 3);
+}
+
+.contacting .container {
+    padding-bottom: 119px;
+}
+
+.contacting .title {
+    margin-bottom: 24px;
 }
 
 .contacting p {
     text-align: center;
+    margin-bottom: 46px;
 }
 
 .contacting .button {
+    
    display: flex;
 justify-content: center;
     align-items: center;
-    margin: auto
+    min-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   
+   
+
 }
 
 .underline-copyright span {
@@ -183,4 +262,14 @@ justify-content: center;
 
 .underline-copyright {
     font-size: 16px;
+    padding-top: 48px;
+    margin-bottom: 36px;
 }
+
+.underline .container {
+    border-top: solid 1px #696969;
+    
+   
+}
+
+
