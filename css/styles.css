@@ -222,15 +222,18 @@ color: var(--accent-color);
 
 .button:hover,
 .button:focus {
-    
+    color: #292929;
     background-color: var(--accent-color);
-    box-shadow: inset 4px 4px 6px 4px rgba(50, 50, 50, 0.7)
+    box-shadow: inset 6px 6px 6px 3px rgba(68, 64, 64, 0.3)
     
 }
 
 .button-icon {
     margin-right: 16px;
+    fill: #ffffff;
 }
+
+
 
 .featured-work-title {
     font-size: 16px;
@@ -419,15 +422,28 @@ justify-content: center;
    
 }
 
-.social-icon {
-    margin-top: 49px;
-    fill: currentColor;
+.social-item {
+    display: flex;
+    fill: #959595;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+
+
+.social-icon {
+    margin-top: 49px;
+    fill: #959595;
+}
+
+.social-icon:hover {
+    fill:#ffffff;
+    
+}
+
+/*.social-item-link:hover,
+.social-item-link:focus {
     fill: navy;
 }
+*/
 
 .social-item:not(:last-child) {
     margin-right: 43px;
