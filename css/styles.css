@@ -88,6 +88,7 @@ ul {
     background-color: rgba(50, 50, 50, 0.9);
     
     
+    
 }
 
 .header-nav {
@@ -447,5 +448,33 @@ justify-content: center;
 
 .social-item:not(:last-child) {
     margin-right: 43px;
+}
+
+
+
+/* --------------   Work 2  ------------------------------------*/
+
+.work-header {
+    background-image: ;
+}
+
+.covibe p {
+    white-space:pre;
+  text-align: start;
+  
+}
+
+.covibe-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.covibe-list-item {
+    display: block;
+
+}
+
+.solution-list {
+    display: block;
 }
 
