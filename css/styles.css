@@ -4,6 +4,9 @@
     --white-text-color: #ffffff;
     --background-button-color: #9D9D9D;
     --accent-color: #959595;
+
+    --work-page-title-color:#DEDEDE;
+    --work-page-main-ctext-color:
 }
 
 /*переробити 
@@ -458,15 +461,26 @@ justify-content: center;
     background-image: ;
 }
 
-.covibe p {
+.covibe .pre {
+    
+    padding-top: 0;
     white-space:pre;
-  text-align: start;
+  
   
 }
 
 .covibe-list {
     display: flex;
     justify-content: space-between;
+}
+
+.covibe-title {
+    padding-top: 128px;
+    
+}
+
+.covibe-list-title {
+    margin-bottom: 12px;
 }
 
 .covibe-list-item {
@@ -478,3 +492,61 @@ justify-content: center;
     display: block;
 }
 
+.work-page-title {
+    color: var(--secondary-text-color) 0,7;
+    font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+}
+
+
+
+.solution-title {
+    
+    letter-spacing: 2px;
+}
+
+.work-page-description {
+    color: var(--white-text-color);
+    font-size: 32px;
+        line-height: 54px;  
+        
+}
+
+.conclusion .work-page-description {
+    color: var(--secondary-text-color);
+}
+
+.next-case {
+    text-align: center;
+    padding-top: 244px;
+    padding-bottom: 154px;
+    
+}
+
+.covibe-list-description {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 290px;
+}
+
+
+.launch-prototype h2 {
+    padding-top: 88px;
+    margin-bottom: 112px;
+}
+
+.conclusion h2 {
+    padding-top: 216px;
+}
+
+.conclusion p {
+    margin-bottom: 128px;
+}
